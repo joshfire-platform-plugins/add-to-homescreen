@@ -11,11 +11,10 @@ module.exports = {
     });
   },
   bootstrap: function(runtime, params, cb) {
-    cb(null, params['content']); return;
-    /*runtime.readFile('res/add2home.js', function(err, cnt) {
+    runtime.readFile('res/add2home.js', function(err, cnt) {
       if (err) return cb(err);
 
       cb(null, params['content'] + cnt);
-    });*/
+    });
   }
 };
