@@ -11,7 +11,7 @@
   "joshfire":{
     "images":{
       "small":"marketing/image-small.png",
-      "large":"marketing/image-big.png"
+      "big":"marketing/image-small.png"
     },
     "devices":["phone","tablet"],
     "hooks":["startfile", "bootstrap"],
