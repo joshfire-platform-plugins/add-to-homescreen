@@ -3,6 +3,8 @@ module.exports = {
     runtime.readFile('res/add2home.css', function(err, cnt) {
       if (err) return cb(err);
 
+      cb(null, params['content']); return;
+
       var html = '<style style type="text/css">\n';
       html    += ctn;
       html    += '\n</style></body>';
