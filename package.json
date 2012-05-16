@@ -12,8 +12,7 @@
     "images":{
         "small":"marketing/image-small.png"
       },
-      "devices":["phone","tablet"],
-      "hooks":["startfile", "bootstrap"]
-    }
+    "devices":["phone","tablet"],
+    "hooks":["startfile", "bootstrap"]
   }
 }
