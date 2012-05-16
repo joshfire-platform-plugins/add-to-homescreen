@@ -7,10 +7,11 @@
        "iphone",
        "ipad"
     ],
-    "description":"Show a ballon when users browse your mobile web app to add your application to the home screen. Supports iOS &gt; 3.",
+    "description":"Show a ballon when users browse your mobile web app to add your application to the home screen. Supports iOS > 3.",
     "joshfire":{
     "images":{
-        "small":"marketing/image-small.png"
+        "small":"marketing/image-small.png",
+        "large":"marketing/image-small.png"
       },
     "devices":["phone","tablet"],
     "hooks":["startfile", "bootstrap"]
