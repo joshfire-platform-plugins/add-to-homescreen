@@ -1,0 +1,19 @@
+{
+  "name":"add-to-homescreen",
+  "fullName":"Add to homescreen",
+  "version":"0.0.1",
+  "keywords": [
+       "mobile",
+       "iphone",
+       "ipad"
+    ],
+    "description":"Show a ballon when users browse your mobile web app to add your application to the home screen. Supports iOS &gt; 3.",
+    "joshfire":{
+    "images":{
+        "small":"marketing/image-small.png"
+      },
+      "devices":["phone","tablet"],
+      "hooks":["startfile", "bootstrap"]
+    }
+  }
+}
