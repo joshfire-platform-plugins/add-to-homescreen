@@ -1,9 +1,9 @@
 module.exports = {
   startfile: function(runtime, params, callback) {
+    cb(null, params['content']); return;
+
     runtime.readFile('res/add2home.css', function(err, cnt) {
       if (err) return callback(err);
-
-      cb(null, params['content']); return;
 
       var html = '<style style type="text/css"></style>\n';
       html    += ctn;
