@@ -1,20 +1,20 @@
 module.exports = {
   startfile: function(runtime, params, cb) {
     runtime.readFile('res/add2home.css', function(err, cnt) {
-      if (err) return callback(err);
+      if (err) return cb(err);
 
       var html = '<style style type="text/css"></style>\n';
       html    += ctn;
       html    += '\n</style></body>';
 
-      callback(null, params['content'].replace(/<\/body>/i, html));
+      cb(null, params['content'].replace(/<\/body>/i, html));
     });
   },
   bootstrap: function(runtime, params, cb) {
     runtime.readFile('res/add2home.js', function(err, cnt) {
-      if (err) return callback(err);
+      if (err) return cb(err);
 
-      callback(null, params['content'] + ctn);
+      cb(null, params['content'] + ctn);
     });
   }
 };
