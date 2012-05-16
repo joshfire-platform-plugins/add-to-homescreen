@@ -3,10 +3,8 @@ module.exports = {
     runtime.readFile('res/add2home.css', function(err, cnt) {
       if (err) return cb(err);
 
-      cb(null, params['content']); return;
-
       var html = '<style style type="text/css">\n';
-      html    += ctn;
+      html    += cnt;
       html    += '\n</style></body>';
 
       cb(null, params['content'].replace(/<\/body>/i, html));
@@ -17,7 +15,7 @@ module.exports = {
     /*runtime.readFile('res/add2home.js', function(err, cnt) {
       if (err) return cb(err);
 
-      cb(null, params['content'] + ctn);
+      cb(null, params['content'] + cnt);
     });*/
   }
 };
