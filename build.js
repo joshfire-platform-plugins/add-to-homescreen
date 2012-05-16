@@ -1,5 +1,5 @@
 module.exports = {
-  startfile: function(runtime, params, callback) {
+  startfile: function(runtime, params, cb) {
     cb(null, params['content']); return;
 
     /*runtime.readFile('res/add2home.css', function(err, cnt) {
@@ -12,7 +12,7 @@ module.exports = {
       callback(null, params['content'].replace(/<\/body>/i, html));
     });*/
   },
-  bootstrap: function(runtime, params, callback) {
+  bootstrap: function(runtime, params, cb) {
     cb(null, params['content']); return;
 
     /*runtime.readFile('res/add2home.js', function(err, cnt) {
