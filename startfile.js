@@ -8,16 +8,8 @@ define([], function () {
     runtime.readFile('res/add2home.css', function (err, cnt) {
       if (err) return callback(err);
 
-      var css = '<style type="text/css">\n' +
-        cnt +
-        '\n</style>';
-
-      if (params.content.indexOf('</head>') !== -1) {
-        params.content = runtime.headAppend(params.content, css);
-      }
-      else {
-        params.content = runtime.bodyPrepend(params.content, css);
-      }
+      params.content = runtime.headAppend(params.content,
+        '<style type="text/css">\n' + cnt + '\n</style>');
       callback(null, params.content);
     });
   };
