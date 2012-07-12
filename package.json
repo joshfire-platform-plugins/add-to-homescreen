@@ -1,22 +1,46 @@
 {
-  "name":"add-to-homescreen",
-  "fullName":"Add to homescreen",
-  "version":"0.0.2",
+  "name": "add-to-homescreen",
+  "fullName": "Add to home screen",
+  "version": "0.1.0",
   "keywords": [
     "mobile",
     "iphone",
     "ipad"
   ],
-  "description":"Show a ballon when users browse your mobile web app to add your application to the home screen. Supports iOS > 3.",
-  "joshfire":{
-    "images":{
-      "small":"marketing/image-small.png",
-      "big":"marketing/image-small.png"
-    },
-    "devices":["phone","tablet"],
-    "hooks":["startfile", "bootstrap"],
-    "options": {
-
+  "description": "Displays a pop-over when users browse your mobile web app that offers to add your application to the home screen. Supports iOS > 3.",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "LICENSE"
     }
+  ],
+  "joshfire": {
+    "images": {
+      "small": "marketing/image-small.png",
+      "big": "marketing/image-small.png"
+    },
+    "devices": ["phone","tablet"],
+    "hooks": ["startfile", "bootstrap"],
+    "options": {},
+
+    "libraries": [
+      {
+        "name": "Add to Home screen",
+        "homepage": "http://cubiq.org/add-to-home-screen",
+        "description": "I found that many iPhone and iPad users don’t know that they can add their favorite web sites to the Home Screen and interact with them like standard native applications. This script helps them to discover this great feature and suggests the steps needed to add your web app to the dashboard.",
+        "repositories": [
+          {
+            "type": "git",
+            "url": "https://github.com/cubiq/add-to-homescreen.git"
+          }
+        ],
+        "licenses": [
+          {
+            "type": "MIT",
+            "url": "ADD2HOME_LICENSE"
+          }
+        ]
+      }
+    ]
   }
 }
