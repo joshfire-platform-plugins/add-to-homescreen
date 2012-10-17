@@ -7,7 +7,7 @@
     "iphone",
     "ipad"
   ],
-  "description": "Displays a pop-over when users browse your mobile web app that offers to add your application to the home screen. Supports iOS > 3.",
+  "description": "Prompt iOS users to install the application on their home screen when they visit your Web site on an iOS device.",
   "licenses": [
     {
       "type": "MIT",
